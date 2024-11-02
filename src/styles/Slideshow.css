@@ -1,0 +1,134 @@
+/* Slideshow styling */
+.slideshow {
+    position: relative;
+    width: 100%; /* Full width of the viewport */
+    height: 500px; /* Adjusted height for better fit */
+    overflow: hidden; /* Hide overflow for a cleaner look */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Stronger shadow for depth */
+    background-color: #141414; /* Dark background similar to Netflix */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    width: 100%; /* Ensure the container takes full width */
+    height: 100%; /* Full height */
+}
+
+/* Individual slides */
+.slide {
+    min-width: 100%; /* Each slide takes full width */
+    height: 100%;
+    position: relative; /* For positioning elements like titles within slides */
+}
+
+/* Slide image */
+.slide img {
+    width: 100%; /* Make image take the full width */
+    height: 100%; /* Make image take the full height */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+}
+
+/* Container for title and rating */
+.slide-info {
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    padding: 10px; /* Padding around the text */
+    display: flex;
+    justify-content: space-between; /* Space between title and rating */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Movie title */
+.slide-title {
+    color: #fff; /* White text for contrast */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Stronger shadow for readability */
+    font-size: 28px; /* Larger title for emphasis */
+    opacity: 0.9; /* Slightly transparent for style */
+}
+
+/* Slide rating */
+.slide-rating {
+    display: flex;
+    align-items: center; /* Center align the rating */
+    color: gold; /* Gold color for the star */
+    font-size: 20px; /* Adjust size as needed */
+}
+
+/* Star styles */
+.star {
+    font-size: 20px; /* Size of the star */
+    margin-right: 5px; /* Space between the star and the rating number */
+}
+
+/* Navigation buttons */
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%; /* Full width for navigation */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.prev, .next {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 15px 20px; /* Slightly larger padding */
+    cursor: pointer;
+    font-size: 24px; /* Larger font for visibility */
+    border-radius: 50%; /* Circular buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 0, 0, 0.8); /* Bright red on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slideshow {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+
+    .prev, .next {
+        font-size: 20px; /* Slightly smaller buttons */
+        padding: 10px 15px;
+    }
+
+    .slide-title {
+        font-size: 22px; /* Adjust title size for smaller screens */
+    }
+
+    .slide-rating {
+        font-size: 18px; /* Adjust rating size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .slideshow {
+        height: 200px; /* Further adjust height for mobile */
+    }
+
+    .prev, .next {
+        font-size: 16px; /* Smaller buttons for mobile */
+        padding: 6px 10px;
+    }
+
+    .slide-title {
+        font-size: 18px; /* Further adjust title size for mobile */
+    }
+
+    .slide-rating {
+        font-size: 16px; /* Adjust rating size for mobile */
+    }
+}

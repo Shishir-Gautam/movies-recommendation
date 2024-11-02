@@ -1,0 +1,115 @@
+/* Spin.css */
+
+.spin-container {
+    text-align: center; /* Center the content */
+    margin: 20px 0; /* Space above and below */
+    padding: 20px; /* Padding for the container */
+    background-color: #ffffff; /* Solid white background for a clean look */
+    border-radius: 15px; /* Rounded corners for the container */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.spin-button {
+    background-color: #ff4081; /* Pink background similar to Netflix */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 20px; /* Larger font */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    margin: 20px 0; /* Space around the button */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Lighter shadow for depth */
+    font-weight: bold; /* Bold text */
+    letter-spacing: 1px; /* Space between letters */
+}
+
+.spin-button:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Medium shadow on hover */
+}
+
+.instruction-text {
+    font-size: 16px; /* Font size for the instruction */
+    color: #666; /* Darker gray for better readability */
+    margin-bottom: 15px; /* Space below the instruction text */
+    margin-top: 0; /* No margin above */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.recommended-movie {
+    display: flex; /* Flexbox layout */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Space above the movie result */
+    background: linear-gradient(135deg, #FF69B4, #FFD700); /* Solid gradient background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    max-width: 900px; /* Limit the width */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.3s; /* Smooth transform transition */
+    position: relative; /* For positioning text and image */
+}
+
+.recommended-movie:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.recommended-movie img {
+    width: 220px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for image */
+    transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.recommended-movie img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+.recommended-movie h2 {
+    font-size: 24px; /* Adjusted title size */
+    margin: 0; /* Remove default margin */
+    color: #fff; /* White color for title for better contrast */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for better visibility */
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 0.5px; /* Space between letters */
+}
+
+.recommended-movie p {
+    margin: 5px 0; /* Space between paragraphs */
+    color: #fff; /* White color for the text for better contrast */
+    line-height: 1.6; /* Improved line height */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.recommended-movie .rating {
+    background-color: #ffffff; /* Solid white background for rating */
+    padding: 5px 10px; /* Padding for rating */
+    border-radius: 5px; /* Rounded corners for rating */
+    color: #ffeb3b; /* Yellow color for rating */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    margin-top: 10px; /* Space above rating */
+}
+
+/* Add a subtle animation for the recommended movie container */
+.recommended-movie {
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

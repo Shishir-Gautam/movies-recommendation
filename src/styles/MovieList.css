@@ -1,0 +1,65 @@
+.movie-list {
+    margin: 20px; /* Space around the list */
+}
+
+.movie-list-title {
+    font-size: 24px; /* Title size */
+    color: #fff; /* White text */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.movie-cards-container {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 10px; /* Space between cards */
+}
+
+.movie-card {
+    position: relative; /* For overlay positioning */
+    cursor: pointer; /* Change cursor on hover */
+    overflow: hidden; /* Hide overflow */
+}
+
+.movie-card img {
+    width: 100%; /* Full width */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.movie-card:hover img {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.movie-overlay {
+    position: absolute; /* Overlay positioning */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.movie-card:hover .movie-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.movie-info {
+    color: #fff; /* White text for info */
+    text-align: center; /* Center align text */
+}
+
+.movie-info h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Title size */
+}
+
+.movie-info p {
+    margin: 5px 0; /* Space above and below */
+    font-size: 14px; /* Rating size */
+}

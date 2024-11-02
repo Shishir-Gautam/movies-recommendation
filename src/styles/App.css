@@ -1,0 +1,124 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #75a8cc; /* Lighter blue background for a soft look */
+}
+
+.app {
+  padding: 20px; /* More padding for spacious layout */
+  background-color: #ffffff; /* White background for the app */
+  border-radius: 12px; /* Slightly larger border radius */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  max-width: 1200px; /* Maximum width to contain layout */
+  margin: auto; /* Center the app in the viewport */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; /* Increased margin for separation */
+}
+
+.header h1 {
+  color: #333; /* Dark text for the header */
+  margin: 0;
+  font-size: 2rem; /* Larger font size for the title */
+}
+
+.genre-filter {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Reduced left margin for better alignment */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Center items vertically */
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px; /* Width for the search input */
+  border: 2px solid #ccc; /* Light grey border */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.search-bar input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  margin-left: 10px; 
+  background-color: #007bff; /* Blue background for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Button hover effects */
+}
+
+.search-bar button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* Stack main content sections vertically */
+  gap: 20px; /* Space between sections */
+}
+
+.movie-recommendations {
+  flex: 1; /* Allow this section to grow and take the remaining space */
+}
+
+.section {
+  background-color: #f8f9fa; /* Light grey background for sections */
+  padding: 20px; /* Increased padding for sections */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for section depth */
+}
+
+.section h2 {
+  color: #333; /* Dark text for section titles */
+  margin-bottom: 15px; /* Space below the title */
+  font-size: 1.5rem; /* Larger font for section headings */
+}
+
+.loading-indicator,
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.slideshow {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden; /* To maintain rounded corners */
+}
+
+.genre-dropdown {
+  margin: 10px 0; 
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f1f1f1; 
+  transition: background-color 0.3s, transform 0.2s; /* Dropdown hover effects */
+}
+
+.genre-dropdown:hover {
+  background-color: #e2e2e2; 
+  transform: translateY(-1px); /* Slight lift on hover */
+}

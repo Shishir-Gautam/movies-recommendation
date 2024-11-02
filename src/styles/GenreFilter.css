@@ -1,0 +1,25 @@
+.genre-filter {
+    margin: 20px 0; /* Increased margin for better spacing */
+    text-align: center; /* Center the filter for a balanced layout */
+}
+
+.genre-filter select {
+    padding: 10px; /* More padding for a better feel */
+    border-radius: 5px; /* Slightly more rounded corners */
+    border: 1px solid #ccc; /* Light border for definition */
+    background-color: #ffffff; /* White background for contrast */
+    font-size: 1em; /* Standard font size for readability */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.genre-filter select:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.genre-filter label {
+    font-size: 1.1em; /* Label font size */
+    color: #333; /* Dark color for contrast */
+    margin-right: 10px; /* Space between label and select */
+}
